@@ -3,7 +3,7 @@
 /* more headers goes there */
 #include <stdio.h>
 /*
- * main - random variation
+ * main - main function
  *
  * Return: always 0
  */
