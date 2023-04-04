@@ -2,23 +2,26 @@
 
 /**
  * leet - leet encoding
- * @str - string
- * Return: str
+ * @str: string
+ * Return: strength_length
  */
 char *leet(char *str)
 {
-	int i;
+	int i, j;
 
-	char *a = "aAeEoOtTlL";
-	char *b = "4433007711";
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	for (i = 0 ; str[i] != '\0' ; i++)
+	i = 0;
+	while (str[i] != '\0')
 	{
-		for (j = 0 ; a[j] < = != '\0' ; j++)
+		j = 0;
+		while (j < 10)
 		{
-			if (str[i] == a[j])
+			if (a[j] == str[i])
 				str[i] = b[j];
 		}
+		j++;
 	}
-	return (str);
+	i++;
 }
