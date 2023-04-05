@@ -24,4 +24,5 @@ char *leet(char *str)
 		j++;
 	}
 	i++;
+	return (string_length);
 }
