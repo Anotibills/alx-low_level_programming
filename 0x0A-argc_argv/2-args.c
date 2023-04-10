@@ -6,7 +6,7 @@
  * @argv: array of arguments
  * Return: argument received
  */
-int main(int argc, *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
