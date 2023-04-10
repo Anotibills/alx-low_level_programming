@@ -1,7 +1,14 @@
 #include "main.h"
 
-int main(argc)
+/**
+ * main - to print program name
+ * @argc: number of argument
+ * @argv: arrays of argument
+ * Return: Program name
+ */
+
+int main(int argc, char *argv)
 {
-	printf("argc = %d\n", argc);
-	return 0;
+	printf("%s\n", *argvi);
+	return (0);
 }
