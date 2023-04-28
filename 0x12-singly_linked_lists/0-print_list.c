@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 /**
  * print_list - function that prints all element of a list
