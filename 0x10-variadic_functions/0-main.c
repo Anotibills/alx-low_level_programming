@@ -16,4 +16,7 @@ int main(void)
     printf("%d\n", sum);    
     return (0);
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> fa0245769c388b162a34fa97b9f1671c5671b2e7

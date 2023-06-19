@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+#ifndef VARIADIC_FUNCTION
+#define VARIADIC_FUNCTION
+=======
 #ifndef VARIADIC_FUNCTIONS
 #define VARIADIC_FUNCTIONS
+>>>>>>> fa0245769c388b162a34fa97b9f1671c5671b2e7
 
 #include <stdlib.h>
 #include <stdio.h>
