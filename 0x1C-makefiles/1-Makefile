@@ -1,7 +1,6 @@
 #The all rule builds executable
 #name ofthe executable school
-CC=gcc
-SRC=main.c school.c
-
-all: school.c
+CC = gcc
+SRC = school.c main.c
+all:
 	$(CC) $(SRC) -o school

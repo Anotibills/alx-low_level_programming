@@ -1,26 +1,19 @@
 #Build the executable school with the variables CC, SRC, OBJ, NAME, RM
 CC = gcc
-SRC = main.c holberton.c
-OBJ = $(SRC:.c=.o)
+SRC = holberton.c main.c
+OBJ = $(SRC:%.c=%.o)
 NAME = holberton
 RM = rm -f
 
-
-all: $(NAME)
-
-$(NAME): $(OBJ)
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-%.o: %.c
-	$(CC) -c $< -o $@
-
 clean:
-	$(RM) *~ $(OBJ)
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
 re: fclean all

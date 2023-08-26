@@ -1,18 +1,17 @@
 #Build the executable school with all rule that recompile only the source update
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -pedantic
-SRC = main.c holberton.c
-OBJ = $(SRC:.c=.o)
-NAME = holberton
+SRC = school.c main.c
+OBJ = $(SRC:%.c=%.o)
+NAME = school
 RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+.PHONY: all clean oclean fclean re
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
 	$(RM) *~ $(NAME)
@@ -21,6 +20,5 @@ oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
 re: fclean all
