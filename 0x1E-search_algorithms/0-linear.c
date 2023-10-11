@@ -32,5 +32,9 @@ int linear_search(int *array, size_t size, int value)
 		printf("Found %d at index: %d\n", value, found);
 		return (found);
 	}
-	return (-1);
+	else
+	{
+		printf("Found %d at index: -1\n", value);
+		return (-1);
+	}
 }
